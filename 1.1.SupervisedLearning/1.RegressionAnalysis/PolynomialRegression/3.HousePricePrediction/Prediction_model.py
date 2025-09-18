@@ -7,7 +7,7 @@ df = pd.read_csv('house_prices.csv')
 x = df.drop('Price',axis = 1)
 y = df['Price']
 
-poly = PolynomialFeatures(degree = 3)
+poly = PolynomialFeatures(degree = 3  )
 x_square = poly.fit_transform(x)  
 
 model = LinearRegression()
